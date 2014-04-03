@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LNViewController">
+            <connections>
+                <outlet property="inputBGView" destination="2hs-zn-Cje" id="pA9-Zi-POT"/>
+                <outlet property="openSwitch" destination="NUE-Us-ud1" id="xDE-98-KoQ"/>
+                <outlet property="pwdTextField" destination="Jsq-Qr-4lX" id="Zxw-jn-614"/>
+                <outlet property="statusLabel" destination="9fR-BK-QtX" id="RHd-XW-xg5"/>
+                <outlet property="titleLabel" destination="qBr-Oh-dn2" id="sbp-k1-2a4"/>
+                <outlet property="usernameTextField" destination="hCz-Dk-gxb" id="vcc-pF-gac"/>
+                <outlet property="versionLabel" destination="UYE-ij-Tvp" id="kyR-8R-bPX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" alpha="0.69999999999999996" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iReagle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBr-Oh-dn2">
+                    <rect key="frame" x="0.0" y="120" width="320" height="36"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="wgw-nW-RMb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-zn-Cje">
+                    <rect key="frame" x="16" y="188" width="288" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="用户名" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hCz-Dk-gxb">
+                            <rect key="frame" x="16" y="0.0" width="256" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="smD-b0-18h"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="rFz-QM-lmu"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密    码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-Qr-4lX">
+                            <rect key="frame" x="16" y="45" width="256" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="hQK-Fc-vDD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Rga-WW-u1h"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilo-eW-28B">
+                            <rect key="frame" x="0.0" y="44" width="288" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.89411771297454834" green="0.89411771297454834" blue="0.89411771297454834" alpha="1" colorSpace="deviceRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jsq-Qr-4lX" firstAttribute="leading" secondItem="hCz-Dk-gxb" secondAttribute="leading" id="2jF-t6-R0o"/>
+                        <constraint firstItem="hCz-Dk-gxb" firstAttribute="trailing" secondItem="Jsq-Qr-4lX" secondAttribute="trailing" id="4Ej-Df-mFx"/>
+                        <constraint firstAttribute="bottom" secondItem="Jsq-Qr-4lX" secondAttribute="bottom" id="4Ho-jz-0ea"/>
+                        <constraint firstItem="hCz-Dk-gxb" firstAttribute="leading" secondItem="2hs-zn-Cje" secondAttribute="leading" constant="16" id="86f-mB-gEO"/>
+                        <constraint firstItem="Jsq-Qr-4lX" firstAttribute="top" secondItem="ilo-eW-28B" secondAttribute="bottom" id="CVD-mF-B6p"/>
+                        <constraint firstAttribute="trailing" secondItem="ilo-eW-28B" secondAttribute="trailing" id="DAu-zC-JCM"/>
+                        <constraint firstItem="ilo-eW-28B" firstAttribute="centerX" secondItem="hCz-Dk-gxb" secondAttribute="centerX" id="E6h-9b-4vc"/>
+                        <constraint firstItem="ilo-eW-28B" firstAttribute="top" secondItem="hCz-Dk-gxb" secondAttribute="bottom" id="iJ8-ws-tjY"/>
+                        <constraint firstItem="hCz-Dk-gxb" firstAttribute="top" secondItem="2hs-zn-Cje" secondAttribute="top" id="vko-QA-0eH"/>
+                        <constraint firstItem="ilo-eW-28B" firstAttribute="leading" secondItem="2hs-zn-Cje" secondAttribute="leading" id="zzr-fr-dAY"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wifi_flag" translatesAutoresizingMaskIntoConstraints="NO" id="klE-e9-68c">
+                    <rect key="frame" x="16" y="331" width="16" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Connect to reagle WiFi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fR-BK-QtX">
+                    <rect key="frame" x="36" y="330" width="187" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NUE-Us-ud1">
+                    <rect key="frame" x="250" y="323" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="openSwitchPress:" destination="-1" eventType="valueChanged" id="Mg8-1w-aa3"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Design by Bill liu(v1.2)." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYE-ij-Tvp">
+                    <rect key="frame" x="20" y="533" width="280" height="15"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.23137255012989044" green="0.3490196168422699" blue="0.59607845544815063" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="9fR-BK-QtX" firstAttribute="top" secondItem="2hs-zn-Cje" secondAttribute="bottom" constant="52" id="0pJ-9t-3hy"/>
+                <constraint firstItem="qBr-Oh-dn2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1eA-hz-zcR"/>
+                <constraint firstItem="2hs-zn-Cje" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9sZ-M9-Zai"/>
+                <constraint firstItem="UYE-ij-Tvp" firstAttribute="trailing" secondItem="NUE-Us-ud1" secondAttribute="trailing" constant="1" id="BuX-YK-Lg7"/>
+                <constraint firstItem="qBr-Oh-dn2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="Jl0-AN-C7t"/>
+                <constraint firstItem="NUE-Us-ud1" firstAttribute="top" secondItem="2hs-zn-Cje" secondAttribute="bottom" constant="45" id="JvR-A7-7J3"/>
+                <constraint firstAttribute="bottom" secondItem="UYE-ij-Tvp" secondAttribute="bottom" constant="20" symbolic="YES" id="L47-uo-sbP"/>
+                <constraint firstItem="9fR-BK-QtX" firstAttribute="centerY" secondItem="NUE-Us-ud1" secondAttribute="centerY" constant="0.5" id="LMG-mg-Nhz"/>
+                <constraint firstItem="9fR-BK-QtX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="Ns8-BC-mFW"/>
+                <constraint firstItem="NUE-Us-ud1" firstAttribute="leading" secondItem="9fR-BK-QtX" secondAttribute="trailing" constant="27" id="YZn-q9-8qh"/>
+                <constraint firstItem="2hs-zn-Cje" firstAttribute="top" secondItem="qBr-Oh-dn2" secondAttribute="bottom" constant="32" id="Yrr-s2-4aU"/>
+                <constraint firstAttribute="trailing" secondItem="NUE-Us-ud1" secondAttribute="trailing" constant="21" id="a7c-qF-bAd"/>
+                <constraint firstAttribute="bottom" secondItem="NUE-Us-ud1" secondAttribute="bottom" constant="214" id="f7D-oj-IwF"/>
+                <constraint firstItem="UYE-ij-Tvp" firstAttribute="leading" secondItem="9fR-BK-QtX" secondAttribute="leading" constant="-16" id="t1A-rm-SDO"/>
+                <constraint firstAttribute="trailing" secondItem="qBr-Oh-dn2" secondAttribute="trailing" id="yvA-H5-Qrj"/>
+                <constraint firstItem="qBr-Oh-dn2" firstAttribute="centerX" secondItem="2hs-zn-Cje" secondAttribute="centerX" id="z4K-Am-xT2"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="wifi_flag" width="16" height="16"/>
+    </resources>
+</document>
