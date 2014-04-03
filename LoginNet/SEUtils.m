@@ -31,7 +31,7 @@
 
 
 +(void)getUpdatedVersion:(GetUpdatedVersionBlock)block{
-    NSURL *url = [NSURL URLWithString:@"http://ios-app.qiniudn.com/iReagle.plist"];
+    NSURL *url = [NSURL URLWithString:PLIST_HTTP];
     ASIHTTPRequest *httpRequest = [[ASIHTTPRequest alloc] initWithURL:url];
     
     __block ASIHTTPRequest *pointRequest = httpRequest;

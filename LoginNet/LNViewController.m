@@ -317,7 +317,8 @@
         
     }else if(alertView.tag == 202){
         if(buttonIndex == 1){
-            NSURL *url = [NSURL URLWithString:@"itms-services://?action=download-manifest&url=https://dn-ios-app.qbox.me/iReagle.plist"];
+            NSString *urlStr = [NSString stringWithFormat:@"itms-services://?action=download-manifest&url=%@",PLIST_HTTPS];
+            NSURL *url = [NSURL URLWithString:urlStr];
             [[UIApplication sharedApplication] openURL:url];
         }
     }
